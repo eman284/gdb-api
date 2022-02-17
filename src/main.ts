@@ -11,7 +11,7 @@ async function bootstrap() {
     .setExternalDoc('/api-json', '/api-json')
     .addServer(`http://localhost:${port}`)
     .setVersion('1.0')
-    .addTag('Task')
+    .addTag('Post Api')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
