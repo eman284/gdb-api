@@ -10,4 +10,10 @@ export class CreatePostDto {
 
   @ApiProperty()
   body?: string;
+
+  @ApiProperty()
+  date?: Date;
+
+  @ApiProperty()
+  isRead?: boolean;
 }

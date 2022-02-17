@@ -19,8 +19,6 @@ import { PostModule } from './post/post.module';
         return {
           // secure connection
           ssl: isProduction,
-          //
-          url: isProduction ? configService.get('DB_URL') : null,
           extra: {
             ssl: isProduction ? { rejectUnauthorized: false } : null,
           },

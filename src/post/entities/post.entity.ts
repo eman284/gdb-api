@@ -11,4 +11,10 @@ export class Post {
 
   @Column()
   body?: string;
+
+  @Column()
+  date?: Date;
+
+  @Column()
+  isRead?: boolean;
 }
