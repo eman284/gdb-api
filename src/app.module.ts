@@ -14,6 +14,7 @@ import { PostModule } from './post/post.module';
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
+
       useFactory: (configService: ConfigService) => {
         const isProduction = configService.get('STAGE') === 'prod';
         return {
