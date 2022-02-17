@@ -12,9 +12,9 @@ export class Post {
   @Column()
   body?: string;
 
-  @Column()
+  @Column({ nullable: true })
   date?: Date;
 
-  @Column()
+  @Column({ default: false })
   isRead?: boolean;
 }
