@@ -8,6 +8,8 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const port = configService.get('PORT');
   const isDevelopment = configService.get('STAGE') === 'dev';
+  console.log(isDevelopment);
+  console.log(port);
 
   app.enableCors();
   const documentBuilder = new DocumentBuilder()
